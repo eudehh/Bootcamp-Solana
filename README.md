@@ -10,6 +10,7 @@ global `~/.config/solana/cli/config.yml`, and nothing needs a funded wallet.
 | [01](01-hello-account/) | Hello Account | An address is not an account. Rent-exemption is the price of existing. The five fields. |
 | [02](02-account-inspector/) | Account Inspector | Decode a real on-chain account and verify the rent math against the cluster's own sysvars. |
 | [03](03-four-programs/) | Four Pre-Built Programs | System, SPL Token, Token-2022 and the ATA program, driven from Rust with hand-encoded instructions. |
+| [04](04-transaction-lifecycle/) | Transaction Lifecycle | Build, sign, simulate, submit, watch commitment levels — then exceed the CU budget on purpose. |
 
 ## Requirements
 
