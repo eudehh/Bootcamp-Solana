@@ -1,0 +1,14 @@
+[package]
+name = "four-programs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Deliberately minimal. The spl-token / spl-token-2022 / spl-associated-token-account
+# crates are built on the granular solana-* v3 crates while solana-sdk 4 is on v4, so
+# their Pubkey types do not unify. Rather than pin to an old stack, this exercise
+# encodes the instructions by hand — which is the point: an instruction is nothing but
+# a program id, a list of accounts, and a byte array.
+solana-client = "4.2"
+solana-sdk = "4"
+solana-commitment-config = "3"

@@ -4,3 +4,4 @@
 .test-env
 *.json
 !package.json
+target/
