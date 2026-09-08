@@ -12,6 +12,7 @@ global `~/.config/solana/cli/config.yml`, and nothing needs a funded wallet.
 | [03](03-four-programs/) | Four Pre-Built Programs | System, SPL Token, Token-2022 and the ATA program, driven from Rust with hand-encoded instructions. |
 | [04](04-transaction-lifecycle/) | Transaction Lifecycle | Build, sign, simulate, submit, watch commitment levels — then exceed the CU budget on purpose. |
 | [05](05-counter-pda/) | Counter Program with PDAs | An on-chain program: derive PDAs client-side, pass them in, sign for them with `invoke_signed`. |
+| [06](06-spl-token/) | Standard SPL Token | Mint, ATA, transfer between wallets — every account decoded field by field at every step. |
 
 ## Requirements
 
