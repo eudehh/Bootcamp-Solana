@@ -13,6 +13,7 @@ global `~/.config/solana/cli/config.yml`, and nothing needs a funded wallet.
 | [04](04-transaction-lifecycle/) | Transaction Lifecycle | Build, sign, simulate, submit, watch commitment levels — then exceed the CU budget on purpose. |
 | [05](05-counter-pda/) | Counter Program with PDAs | An on-chain program: derive PDAs client-side, pass them in, sign for them with `invoke_signed`. |
 | [06](06-spl-token/) | Standard SPL Token | Mint, ATA, transfer between wallets — every account decoded field by field at every step. |
+| [07](07-anchor-hello-solana/) | Anchor: hello_solana | The `anchor init` scaffold, fixed so its own tests pass, and compared against the native version in 05. |
 
 ## Requirements
 
@@ -21,7 +22,8 @@ global `~/.config/solana/cli/config.yml`, and nothing needs a funded wallet.
     jq --version
     python3 --version
     cargo --version           # exercises 03-05, tested on 1.96.0
-    cargo-build-sbf --version # exercise 05 only, tested on 4.0.0 / platform-tools v1.53
+    cargo-build-sbf --version # exercises 05, 07
+    anchor --version          # exercise 07 only, tested on anchor-cli 1.2.0
 
 ## The one thing worth taking away
 
