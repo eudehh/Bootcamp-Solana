@@ -11,6 +11,7 @@ global `~/.config/solana/cli/config.yml`, and nothing needs a funded wallet.
 | [02](02-account-inspector/) | Account Inspector | Decode a real on-chain account and verify the rent math against the cluster's own sysvars. |
 | [03](03-four-programs/) | Four Pre-Built Programs | System, SPL Token, Token-2022 and the ATA program, driven from Rust with hand-encoded instructions. |
 | [04](04-transaction-lifecycle/) | Transaction Lifecycle | Build, sign, simulate, submit, watch commitment levels — then exceed the CU budget on purpose. |
+| [05](05-counter-pda/) | Counter Program with PDAs | An on-chain program: derive PDAs client-side, pass them in, sign for them with `invoke_signed`. |
 
 ## Requirements
 
@@ -18,7 +19,8 @@ global `~/.config/solana/cli/config.yml`, and nothing needs a funded wallet.
     spl-token --version
     jq --version
     python3 --version
-    cargo --version      # exercise 03 only, tested on 1.96.0
+    cargo --version           # exercises 03-05, tested on 1.96.0
+    cargo-build-sbf --version # exercise 05 only, tested on 4.0.0 / platform-tools v1.53
 
 ## The one thing worth taking away
 

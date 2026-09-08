@@ -1,0 +1,12 @@
+[package]
+name = "counter-program"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-program = "4"
+solana-system-interface = { version = "3", features = ["bincode"] }
+solana-sdk-ids = "3"
+
+[lib]
+crate-type = ["cdylib", "lib"]
